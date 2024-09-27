@@ -7,6 +7,8 @@ import RTLPage from "views/RTL/RTLPage.js";
 import Profile from "views/Dashboard/Profile.js";
 import SignIn from "views/Pages/SignIn.js";
 import SignUp from "views/Pages/SignUp.js";
+import Form from 'views/Dashboard/Form';
+
 
 // - NOTE
 // - In routes active redirect:"#", is not visible en slidebar, without content only "#"
@@ -87,7 +89,7 @@ var dashRoutes = [
         icon: <RocketIcon color='inherit' />,
         component: SignUp,
         layout: "/auth",
-        redirect: "" // If activate redirect is not visible in slidebar
+        redirect: "#" // If activate redirect is not visible in slidebar
       },
     ],
   },
@@ -145,14 +147,13 @@ var dashRoutes = [
     icon: <PersonIcon color='inherit' />,
     views: [
       {
-        path: "/pages/profile3",
-        name: "Profile3",
+        path: "/pages/reacthookform",
+        name: "React Hook Form",
         rtlName: "لوحة القيادة",
         icon: <PersonIcon color='inherit' />,
         secondaryNavbar: true,
-        component: Profile,
+        component: Form,
         layout: "/admin",
-        redirect:"#" // 
       },
       {
         path: "/signin",

@@ -66,7 +66,7 @@ function Profile() {
         <Flex
           align='center'
           mb={{ sm: "10px", md: "0px" }}
-          direction={{ sm: "column", md: "row" }}
+          direction={{ sm: "column", md: "row" }} // column
           w={{ sm: "100%" }}
           textAlign={{ sm: "center", md: "start" }}>
           <Avatar
@@ -94,7 +94,7 @@ function Profile() {
         </Flex>
         <Flex
           direction={{ sm: "column", lg: "row" }}
-          w={{ sm: "100%", md: "50%", lg: "auto" }}>
+          w={{ sm: "100%", md: "50%", lg: "auto", xl: "auto" }}>
           <Button p='0px' bg='transparent' variant='no-effects'>
             <Flex
               align='center'
