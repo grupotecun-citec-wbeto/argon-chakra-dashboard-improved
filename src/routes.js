@@ -9,6 +9,7 @@ import SignIn from "views/Pages/SignIn.js";
 import SignUp from "views/Pages/SignUp.js";
 import Form from 'views/Dashboard/Form';
 import Formik from 'views/Dashboard/Formik';
+import SignInDash from 'views/Dashboard/SignInDash';
 
 // - NOTE
 // - In routes active redirect:"#", is not visible en slidebar, without content only "#"
@@ -162,6 +163,15 @@ var dashRoutes = [
         icon: <PersonIcon color='inherit' />,
         secondaryNavbar: true,
         component: Formik,
+        layout: "/admin",
+      },
+      {
+        path: "/pages/formik-login",
+        name: "Formik Login",
+        rtlName: "لوحة القيادة",
+        icon: <PersonIcon color='inherit' />,
+        secondaryNavbar: true,
+        component: SignInDash,
         layout: "/admin",
       },
       {
