@@ -11,6 +11,7 @@ import Form from 'views/Dashboard/Form';
 import Formik from 'views/Dashboard/Formik';
 import SignInDash from 'views/Dashboard/SignInDash';
 import SearchBox from 'views/Dashboard/SearchBox';
+import Base64Image from 'views/Dashboard/Base64Image';
 
 // - NOTE
 // - In routes active redirect:"#", is not visible en slidebar, without content only "#"
@@ -148,6 +149,15 @@ var dashRoutes = [
     layout: "/admin",
     icon: <PersonIcon color='inherit' />,
     views: [
+      {
+        path: "/pages/base64image",
+        name: "Base 64 Image",
+        rtlName: "لوحة القيادة",
+        icon: <PersonIcon color='inherit' />,
+        secondaryNavbar: true,
+        component: Base64Image,
+        layout: "/admin",
+      },
       {
         path: "/pages/searchbox",
         name: "Serach Box",
