@@ -10,6 +10,7 @@ import SignUp from "views/Pages/SignUp.js";
 import Form from 'views/Dashboard/Form';
 import Formik from 'views/Dashboard/Formik';
 import SignInDash from 'views/Dashboard/SignInDash';
+import SearchBox from 'views/Dashboard/SearchBox';
 
 // - NOTE
 // - In routes active redirect:"#", is not visible en slidebar, without content only "#"
@@ -147,6 +148,15 @@ var dashRoutes = [
     layout: "/admin",
     icon: <PersonIcon color='inherit' />,
     views: [
+      {
+        path: "/pages/searchbox",
+        name: "Serach Box",
+        rtlName: "لوحة القيادة",
+        icon: <PersonIcon color='inherit' />,
+        secondaryNavbar: true,
+        component: SearchBox,
+        layout: "/admin",
+      },
       {
         path: "/pages/reacthookform",
         name: "React Hook Form",
